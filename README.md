@@ -14,3 +14,7 @@
 - `make install` Installs the dependencies
 - `make start` Starts the server
 - Instead `docker-compose build` and `docker-compose up` will bring the service up and running
+
+#### Documentation
+- Redoc style documentation - http://127.0.0.1:8000/redoc
+- Swagger style documentation - http://127.0.0.1:8000/docs
