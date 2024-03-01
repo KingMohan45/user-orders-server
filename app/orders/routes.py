@@ -6,11 +6,11 @@ from app.orders.utils import generate_user_orders
 from db import get_autocommit_db
 from app.schema import UserOrdersResponseSchema
 
-orders_router = APIRouter(prefix="/orders", tags=["Users"])
+orders_router = APIRouter(prefix="/orders", tags=["Orders"])
 
 
 @orders_router.get("/{user_id}", status_code=status.HTTP_200_OK)
-async def get_users(
+async def get_orders(
     user_id: StrictStr,
     session: Session = Depends(get_autocommit_db),
 ) -> UserOrdersResponseSchema:
