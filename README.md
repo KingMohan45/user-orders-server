@@ -1,4 +1,5 @@
 ### User Orders Management Platform APIs
+- For async tasks I have added intentional delay of 5s for mocking and to demonstrate web socket async await.
 - `make seed-users` Validates and adds users to the database
   - Removed few users and updated emails in users.csv which are duplicates and few with invalid/missing emails
   - Here users's email is unique but not phone number
